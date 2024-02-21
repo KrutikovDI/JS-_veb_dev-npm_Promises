@@ -3,7 +3,7 @@ module.exports = {
     'browser': true,
     'es2021': true,
     'node': true
-  },
+  },  	
   'extends': 'eslint:recommended',
   'overrides': [
     {
@@ -16,6 +16,6 @@ module.exports = {
   'parserOptions': {
     'ecmaVersion': 'latest',
     'sourceType': 'module'
-  },	
+  },  
   'rules': {}
-}	
+} 

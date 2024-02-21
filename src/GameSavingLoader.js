@@ -1,13 +1,9 @@
-import { read } from './reader.js'
-import { json } from './parser.js'
+import read from './reader.js'
+import json from './parser.js'
 
 export default class GameSavingLoader {
   static load() {
-    return new Promise((resolve, reject) => {
-      const data = new Promise((resolve, reject) => {
-        read().then(data => json(data)).then(dataJson => resolve(dataJson))
-      });
-    })
+    return read().then(data => json(data))
   }
 }
 
